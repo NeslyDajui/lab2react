@@ -37,6 +37,10 @@ class DogeMeme extends React.Component {
   render() {
     return (
     	<div> 
+    		<input type = "text" value = {this.state.data} 
+               onChange = {this.updateState} />
+            <input type = "text" value = {this.state.dat2}
+            	onChange = {this.updateState2} />
             <div className="imgdoge">
     			<h4 class= "top">{this.state.data}</h4>
     			<img src={Image.jpg} />
