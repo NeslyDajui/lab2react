@@ -12,3 +12,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.imgdoge{
+  background-image: url(./Image.jpg);
+  width: 640px;
+  height: 480px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.topbottom{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h4.top{
+	text-align: center;
+	vertical-align: top;
+	font-style: italic;
+	font-size: 80px;
+	color: white;
+	text-shadow: 
+	4px 0 0 #000, 
+	-4px 0 0 #000, 
+	0 4px 0 #000, 
+	0 -4px 0 #000, 
+	4px 4px #000, 
+	-4px -4px 0 #000, 
+	4px -4px 0 #000, 
+	-4px 4px 0 #000;
+}
+
+h4.bottom{
+	text-align: center;
+	vertical-align: bottom;
+	font-style: italic;
+	font-size: 80px;
+	color: white;
+	text-shadow: 
+	4px 0 0 #000, 
+	-4px 0 0 #000, 
+	0 4px 0 #000, 
+	0 -4px 0 #000, 
+	4px 4px #000, 
+	-4px -4px 0 #000, 
+	4px -4px 0 #000, 
+	-4px 4px 0 #000;
+}
