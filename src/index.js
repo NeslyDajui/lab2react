@@ -16,35 +16,45 @@ class DogeMeme extends React.Component {
       super(props);
       
       this.state = {
-         data: 'Top',
-         dat2: 'Bottom'
+         top: 'Top',
+         bottom: 'Bottom'
       }
       this.updateState = this.updateState.bind(this);
 
       this.updateState2 = this.updateState2.bind(this);
 
-
+      this.reset = this.reset.bind(this);
 
    };
+
    updateState(e) {
-      this.setState({data: e.target.value});
+      this.setState({top: e.target.value});
    }
 
    updateState2(c) {
-   		this.setState({dat2: c.target.value});
+   		this.setState({bottom: c.target.value});
+   }
+
+   reset(){
+   		this.setState({
+   			top: 'Top',
+   			bottom: 'Bottom'
+   		});
    }
 
   render() {
     return (
     	<div> 
-    		<input type = "text" value = {this.state.data} 
-               onChange = {this.updateState} />
-            <input type = "text" value = {this.state.dat2}
-            	onChange = {this.updateState2} />
+    		<input type = "text" value = {this.state.top} 
+               onChange = {this.updateState}/>
+            <input type = "text" value = {this.state.bottom}
+            	onChange = {this.updateState2}/>
+
+            <button onClick={this.reset}>RESET</button>
             <div className="imgdoge">
-    			<h4 class= "top">{this.state.data}</h4>
+    			<h4 class= "top">{this.state.top}</h4>
     			<img src={Image.jpg} />
-    			<h4 class= "bottom">{this.state.dat2}</h4>
+    			<h4 class= "bottom">{this.state.bottom}</h4>
     		</div>
     	</div>
     );
